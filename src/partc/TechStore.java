@@ -842,7 +842,7 @@ public class TechStore {
 
 			Iterator<Item> itr = cart.iterator();
 
-			int g=1;
+			int count=1;
 
 			while(itr.hasNext()){
 
@@ -852,7 +852,7 @@ public class TechStore {
 
 					System.out.println();
 
-					System.out.print(g+" ");
+					System.out.print(count+" ");
 
 					if(element instanceof Book){
 
@@ -868,7 +868,7 @@ public class TechStore {
 
 						}
 
-						g++;
+						count++;
 
 					}
 
@@ -886,7 +886,7 @@ public class TechStore {
 
 						}
 
-						g++;
+						count++;
 
 					}
 
@@ -1234,7 +1234,7 @@ public class TechStore {
 
 			user_found=false;
 
-			HashMap<String, String> hm = new HashMap<String, String>();
+			HashMap<String, String> map = new HashMap<String, String>();
 
 			//System.out.println(user_list.size());
 
@@ -1244,7 +1244,7 @@ public class TechStore {
 
 				User element = (User) itr.next();
 
-				hm.put(element.getId(),element.getPassword());
+				map.put(element.getId(),element.getPassword());
 
 			}
 
